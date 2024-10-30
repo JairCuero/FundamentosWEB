@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleria papiroflex</title>
+</head>
+<body>
+    <header>  
+        <h1>Requerimientos de Compra</h1>  
+    </header>  
+
+    <main>  
+        <section>  
+            <h2>Formulario para Requerimientos</h2>  
+            <form action="/procesar-requerimientos" method="POST">  
+                <div>  
+                    <label for="nombreComprador">Nombre del Comprador:</label>  
+                    <input type="text" id="nombreComprador" name="nombreComprador" required>  
+                </div>  
+                
+                <div>  
+                    <label for="presupuestoMaximo">Presupuesto Máximo:</label>  
+                    <input type="number" id="presupuestoMaximo" name="presupuestoMaximo" min="0" required>  
+                </div>  
+                
+                <div>  
+                    <label for="cantidadArticulosMaxima">Cantidad de Artículos Máxima:</label>  
+                    <input type="number" id="cantidadArticulosMaxima" name="cantidadArticulosMaxima" min="1" required>  
+                </div>  
+                
+                <div>  
+                    <label for="direccion">Dirección:</label>  
+                    <input type="text" id="direccion" name="direccion" required>  
+                </div>  
+
+                 
+                    <legend>Tipo de Entrega:</legend>  
+                    <div>  
+                        <label>  
+                            <input type="radio" name="tipoEntrega" value="entrega_a_domicilio" required>  
+                            Entrega a Domicilio  
+                        </label>  
+                    </div>  
+                    <div>  
+                        <label>  
+                            <input type="radio" name="tipoEntrega" value="recoger_en_tienda">  
+                            Recoger en Tienda  
+                        </label>  
+                    </div>  
+                <br> 
+
+                <div>  
+                    <button type="submit">Iniciar Compra</button>  
+                    <button type="reset">Limpiar Campos</button>  
+                </div>  
+            </form>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2023 Requerimientos de Compra</p>  
+    </footer>  
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleria papiroflex</title>
+    <link rel="stylesheet" href="./../CSS/style.css">
+</head>
+<body>
+    <header>
+        <img src="./../IMG/Logo3.png" alt="OfficExpress" class="logo">  
+        <h1>OFFIEXPRESS</h1> 
+    </header>  
+    <main>
+        <section>  
+            <form action="/procesar-requerimientos" method="POST">  
+                <div class="datosCliente">  
+                    <label for="nombreComprador">Nombre:</label>  
+                    <input type="text" id="nombreComprador" name="nombreComprador" placeholder="Digita tu nombre" required>  
+                </div>  
+                
+                <div class="datosCliente">  
+                    <label for="presupuesto">Presupuesto:</label>  
+                    <input type="number" id="presupuestoo" name="presupuesto" placeholder="Tope de dinero que no se debe superar $" required>  
+                </div>  
+                
+                <div class="datosCliente">  
+                    <label for="cantidadArticulosMaxima">Cantidad de Artículos:</label>  
+                    <input type="number" id="cantidadArticulos" name="cantidadArticulos" placeholder="Numero de articulos max. 20 (Indique un numero)" required>  
+                </div>  
+                
+                <div class="datosCliente">  
+                    <label for="direccion">Dirección:</label>  
+                    <input type="text" id="direccion" name="direccion" placeholder="CL. #, Localidad, Ciudad" required>  
+                </div>           
+                    <legend>Tipo de Entrega:</legend>  
+                    <div class="radio-buttons">
+                      
+                            <label>
+                                <input type="radio" name="radio" checked="">
+                                <span>Entrega adomicilio</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="radio">
+                                <span>Recoger en tienda</span>
+                            </label>
+                        
+                    </div>
+                <br> 
+
+                <div class="button-clear-start">
+                    <button type="submit">Iniciar Compra</button>  
+                    <button type="reset">Limpiar Campos</button>  
+                </div>  
+            </form>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2024 Vista Requerimientos de Compra</p>  
+    </footer>  
+    <script src="js/main.js"></script>
+</body>
+</html>

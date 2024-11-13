@@ -1,6 +1,16 @@
 # FundamentosWEB
-Proyecto final E - COMERCE:
-Este proyecto conciste en un E-COMERCE de articulos de Papeleria y Oficina, este simula una tienda online que le permitira a el usuario hacer compras
-sujeto a una condicion de presupuesto y a una cantidad de articulos que este desee; Tambien cuenta con 3 vistas la primera es para dar las condiciones de la compra
-la segunda vista consiste en una lista de productos con scroll infinito y la tercera vista consiste en el carrito de comrpras que contiene un resumen de los articulos 
-que se encuentran en dicho carrito con finalizacion de la compra y su respectivo pago. En el momento solo tengo en git el archivo JS.
+Proyecto Final E-COMMERCE: Artículos de Papelería y Oficina
+
+Este proyecto consiste en el desarrollo de un E-COMMERCE dedicado a la venta de artículos de papelería y oficina, diseñado para simular una tienda online que permite a los usuarios realizar compras de manera sencilla y eficiente. La aplicación se enfoca en ofrecer una experiencia de usuario intuitiva, donde el comprador puede gestionar su presupuesto y la cantidad de artículos que desea adquirir.
+
+Estructura del Proyecto:
+
+Condiciones de Compra:
+La primera vista del sitio establece claramente las condiciones de compra. Aquí, se informan a los usuarios sobre aspectos fundamentales como el presupuesto disponible y las restricciones en la cantidad de artículos que pueden adquirir.
+
+Lista de Productos:
+La segunda vista presenta una lista de productos que el usuario puede explorar. Implementé un sistema de scroll infinito, lo que permite a los usuarios navegar por 40 artículos sin necesidad de cargar nuevas páginas. Este enfoque mejora la experiencia de usuario al hacer que la navegación sea más fluida y menos frustrante, incentivando a los usuarios a seguir explorando hasta encontrar lo que desean.
+
+Carrito de Compras:
+La tercera vista está dedicada al carrito de compras, donde los usuarios pueden ver un resumen detallado de los artículos que han agregado. Incluye funcionalidades como la posibilidad eliminar artículos. Además, se incorpora un sistema de validación de tarjeta de crédito para asegurar que la transacción se realiza de manera segura, finalizando con el proceso de pago.
+Este ultimo no lo pude terminar y algunas cosas me quedaron faltando me ya me quedaran como aprendizaje. Gracias!!

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/listaProductos.css">
+  <title>Catalogo Papeleria y Oficina</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./../IMG/Logo3.png" alt="OfficExpress" class="logo">
+      <h1>OFFIEXPRESS</h1> 
+      <p>¡¡Bienvenido!!, Aqui encontraras el catalogo de productos <br> que tenemos para ti.</p>
+    </header>
+
+<nav class="filters">
+  <button id="cancelarCompra">Cancelar Compra</button>
+  <button type="button" id="irCarrito">Ir al Carrito</button>
+  <select id="filtroCategoria">
+    <option value="Todos">Todos</option>
+    <option value="Organización">Organización</option>
+    <option value="Papelería">Papelería</option>
+    <option value="Oficina">Oficina</option>
+    <option value="Medición">Medición</option>
+    <option value="Escritura">Escritura</option>
+  </select>
+  
+  <select id="filtroPrecio">
+    <option value="Todos">Todos</option>
+    <option value="0-2000">$0 - $2,000</option>
+    <option value="2001-6000">$2,001 - $6,000</option>
+    <option value="6001-15000">$6,001 - $15,000</option>
+    <option value="15000+">$15,001 y más</option>
+  </select>
+  
+  <button type="button" id="aplicarFiltros">Filtrar</button>
+  <button type="button" id="limpiarFiltros">Limpiar</button>
+</nav>
+
+    <main class="main-content">
+      <section class="product-list">
+      </section>
+      <aside class="product-details">
+        <img src="#" alt="Imagen del producto seleccionado" />
+        <h2>Nombre del Producto</h2>
+        <p class="product-price">Precio:</p>
+        <p class="product-category">Categoría:</p>
+        <p class="product-stock">Disponibles:</p>
+        <p class="product-description">Descripción:</p>
+        
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" value="1" />
+      
+        <button type="button" id="agregarAlCarrito">Agregar al Carrito</button>
+      </aside>
+    
+    </main>
+  </div>
+  <script src="../JS/listaProductos.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="../CSS/carrito.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="./../IMG/Logo3.png" alt="OfficExpress" class="logo">
+      <h1>OFFIEXPRESS - Tu Carrito de compras</h1>
+      <button id="cancelPurchase">Cancelar Compra</button>
+      <button id="continueShopping">Seguir Comprando</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cart">
+      <h1>Carrito de Compras</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Imagen</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Total</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="cartItems">
+          <!-- Productos del carrito cargados-->
+        </tbody>
+      </table>
+
+      <div class="totals">
+        <p>Costo total de productos: <span id="totalCost"></span></p>
+        <p>Costo de domicilio: <span id="deliveryCost">15,000</span></p>
+        <p>Costo total de la compra: <span id="finalCost"></span></p>
+      </div>
+    </section>
+
+    <aside class="payment-info">
+      <h2>Información de Pago</h2>
+      <form id="paymentForm">
+        <label for="cardNumber">Número de Tarjeta</label>
+        <input type="text" id="cardNumber" maxlength="16" required>
+
+        <label for="expiryDate">Fecha de Expiración (MM/AA)</label>
+        <input type="text" id="expiryDate" placeholder="MM/AA" maxlength="5" required>
+
+        <label for="securityCode">Código de Seguridad</label>
+        <input type="password" id="securityCode" maxlength="3" required>
+        <button type="button" id="toggleSecurityCode">👁️</button>
+
+        <label for="cardHolder">Nombre del Titular</label>
+        <input type="text" id="cardHolder" required>
+
+        <label for="cardCountry">País de Emisión</label>
+        <select id="cardCountry" required>
+          <option value="Colombia">Colombia</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Chile">Chile</option>
+          <option value="México">México</option>
+          <option value="Perú">Perú</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Estados Unidos">Estados Unidos</option>
+          <option value="España">España</option>
+          <option value="Francia">Francia</option>
+          <option value="Alemania">Alemania</option>
+        </select>
+
+        <label for="cardType">Tipo de Tarjeta</label>
+        <select id="cardType" required>
+          <option value="Mastercard">Mastercard</option>
+          <option value="Visa">Visa</option>
+          <option value="Prepagada">Prepagada</option>
+        </select>
+
+        <button type="button" id="clearFields">Limpiar Campos</button>
+        <button type="button" id="confirmPurchase">Confirmar Compra</button>
+      </form>
+    </aside>
+  </main>
+
+  <script src="../JS/carrito.js"></script>
+</body>
+</html>

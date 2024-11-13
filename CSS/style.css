@@ -31,7 +31,7 @@ header img{
 
 header h1 {
     font-size: 2.5rem;
-    color: #ffffff; /* Naranja cálido */
+    color: #ffffff;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
@@ -57,7 +57,7 @@ label {
     margin:7px;
     font-weight: bold;
     font-size: 12px;
-    color: #ff914d; /* Naranja cálido */
+    color: #ff914d;
 }
 
 legend{
@@ -125,7 +125,7 @@ input[type="number"]:focus {
 
 button[type="submit"],
 button[type="reset"] {
-    background: linear-gradient(135deg, #ed935b, #fd7f01); /* Degradado naranja */
+    background: linear-gradient(135deg, #ed935b, #fd7f01);
     color: #fff;
     padding: 12px;
     font-size: 13px;

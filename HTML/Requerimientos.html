@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papeleria papiroflex</title>
+    <title>Papeleria OFFIEXPRESS</title>
     <link rel="stylesheet" href="./../CSS/style.css">
 </head>
 <body>
@@ -13,20 +13,20 @@
     </header>  
     <main>
         <section>  
-            <form action="/procesar-requerimientos" method="POST">  
+            <form id="formularioCompra" method="POST">  
                 <div class="datosCliente">  
                     <label for="nombreComprador">Nombre:</label>  
-                    <input type="text" id="nombreComprador" name="nombreComprador" placeholder="Digita tu nombre" required>  
+                    <input type="text" id="nombreComprador" maxlength="20" name="nombreComprador" placeholder="Digita tu nombre max. 20 caracteres" required>  
                 </div>  
                 
                 <div class="datosCliente">  
-                    <label for="presupuesto">Presupuesto:</label>  
-                    <input type="number" id="presupuestoo" name="presupuesto" placeholder="Tope de dinero que no se debe superar $" required>  
+                    <label for="presupuesto">Presupuesto:</label>
+                    <input type="text" id="presupuestoo" onkeyup="moneda()" name="presupuesto" placeholder="Tope de dinero $" required>  
                 </div>  
                 
                 <div class="datosCliente">  
-                    <label for="cantidadArticulosMaxima">Cantidad de Artículos:</label>  
-                    <input type="number" id="cantidadArticulos" name="cantidadArticulos" placeholder="Numero de articulos max. 20 (Indique un numero)" required>  
+                    <label for="cantidadArticulos">Cantidad de Artículos:</label>  
+                    <input type="number" id="cantidadArticulos" name="cantidadArticulos" min="0" max="20" placeholder="Numero de articulos max. 20 (Indique un numero)" required>  
                 </div>  
                 
                 <div class="datosCliente">  
@@ -36,15 +36,14 @@
                     <legend>Tipo de Entrega:</legend>  
                     <div class="radio-buttons">
                       
-                            <label>
-                                <input type="radio" name="radio" checked="">
-                                <span>Entrega adomicilio</span>
-                            </label>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span>Recoger en tienda</span>
-                            </label>
-                        
+                        <label>
+                            <input type="radio" name="tipoEntrega" value="adomicilio" checked="">
+                            <span>Entrega a domicilio</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="tipoEntrega" value="tienda">
+                            <span>Recoger en tienda</span>
+                        </label>
                     </div>
                 <br> 
 
@@ -59,6 +58,6 @@
     <footer>  
         <p>&copy; 2024 Vista Requerimientos de Compra</p>  
     </footer>  
-    <script src="js/main.js"></script>
+    <script src="/JS/requerimientos.js"></script>
 </body>
 </html>

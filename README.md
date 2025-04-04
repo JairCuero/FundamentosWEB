@@ -13,4 +13,4 @@ La segunda vista presenta una lista de productos que el usuario puede explorar. 
 
 Carrito de Compras:
 La tercera vista está dedicada al carrito de compras, donde los usuarios pueden ver un resumen detallado de los artículos que han agregado. Incluye funcionalidades como la posibilidad eliminar artículos. Además, se incorpora un sistema de validación de tarjeta de crédito para asegurar que la transacción se realiza de manera segura, finalizando con el proceso de pago.
-Este ultimo no lo pude terminar y algunas cosas me quedaron faltando me ya me quedaran como aprendizaje. Gracias!!
+Gracias!!
